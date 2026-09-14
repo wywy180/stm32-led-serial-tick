@@ -11,3 +11,33 @@ __pycache__/
 *.pyc
 .next/
 coverage/
+.trae/
+
+# ---- Keil MDK 构建产物 ----
+Project/Objects/
+Project/Listings/
+*.uvguix.*
+*.uvoptx
+*.uvopt
+*.bak
+*.dep
+*.d
+*.crf
+*.o
+*.iex
+*.map
+*.lst
+*.htm
+*.axf
+*.elf
+*.hex
+*.bin
+*.sct
+*.lnp
+JLinkLog.txt
+
+# ---- 自动生成的版本文件（由 Scripts/gen_version.bat 重写）----
+BSP/bsp_version.c
+
+# ---- 构建日志 ----
+Scripts/build.log
