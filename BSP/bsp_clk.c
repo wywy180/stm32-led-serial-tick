@@ -28,7 +28,11 @@ void bsp_clk_init(void)
     PWR->CR |= (3U << 14);                               // VOS=11 -> Scale1
 
     /* ---- 3. Flash 等待周期 5 WS + 预取 + I/D Cache ---- */
+<<<<<<< HEAD
     FLASH->ACR = FLASH_ACR_LATENCY_5W                    // 5 个等待周期
+=======
+    FLASH->ACR = FLASH_ACR_LATENCY_5WS                   // 5 个等待周期
+>>>>>>> e4158175f9ab30d24f7d567946e59df59350963a
                | FLASH_ACR_PRFTEN                        // 预取使能
                | FLASH_ACR_ICEN                          // 指令 Cache
                | FLASH_ACR_DCEN;                         // 数据 Cache

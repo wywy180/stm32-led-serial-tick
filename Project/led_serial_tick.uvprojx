@@ -266,9 +266,15 @@
             <uAC6>0</uAC6>
             <VariousControls>
               <MiscControls></MiscControls>
+<<<<<<< HEAD
               <Define>STM32F40_41xxx,HSE_VALUE=8000000</Define>
               <Undefine></Undefine>
               <IncludePath>..\User;..\BSP;..\CMSIS</IncludePath>
+=======
+              <Define>STM32F407xx,HSE_VALUE=8000000</Define>
+              <Undefine></Undefine>
+              <IncludePath>..\User;..\BSP;..\CMSIS;..\CMSIS\CMSIS_Core;C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include</IncludePath>
+>>>>>>> e4158175f9ab30d24f7d567946e59df59350963a
             </VariousControls>
           </Cads>
           <Aads>
@@ -288,7 +294,11 @@
             </VariousControls>
           </Aads>
           <LDads>
+<<<<<<< HEAD
             <umfTarg>1</umfTarg>
+=======
+            <umfTarg>0</umfTarg>
+>>>>>>> e4158175f9ab30d24f7d567946e59df59350963a
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
@@ -297,7 +307,11 @@
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
+<<<<<<< HEAD
             <ScatterFile></ScatterFile>
+=======
+            <ScatterFile>.\stm32f407zg.sct</ScatterFile>
+>>>>>>> e4158175f9ab30d24f7d567946e59df59350963a
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc></Misc>
