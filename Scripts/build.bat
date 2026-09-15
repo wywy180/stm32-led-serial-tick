@@ -9,11 +9,7 @@ rem ============================================================================
 setlocal
 
 rem ---- Keil UV4 path: prefer env var KEIL, else default (edit as needed) ----
-<<<<<<< HEAD
-if "%KEIL%"=="" set "KEIL=C:\Keil_v5\UV4\UV4.exe"
-=======
 if "%KEIL%"=="" set "KEIL=C:\Users\Lenovo\AppData\Local\Keil_v5\UV4\UV4.exe"
->>>>>>> e4158175f9ab30d24f7d567946e59df59350963a
 
 set "ROOT=%~dp0.."
 set "PROJ=%ROOT%\Project\led_serial_tick.uvprojx"
@@ -44,11 +40,11 @@ echo --------------------------
 echo.
 
 if "%RC%"=="0" (
-    echo [OK]    build success (no errors, no warnings)
+    echo [OK]    build success: no errors no warnings
 ) else if "%RC%"=="1" (
-    echo [WARN]  build success (with warnings)
+    echo [WARN]  build success with warnings
 ) else (
-    echo [FAIL]  build failed (code %RC%, see log above)
+    echo [FAIL]  build failed, code %RC%, see log above
 )
 
 exit /b %RC%

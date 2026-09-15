@@ -267,8 +267,6 @@ Default_Handler PROC
                 EXPORT  DCMI_IRQHandler           [WEAK]
                 EXPORT  HASH_RNG_IRQHandler       [WEAK]
                 EXPORT  FPU_IRQHandler            [WEAK]
-<<<<<<< HEAD
-=======
 
 WWDG_IRQHandler
 PVD_IRQHandler
@@ -352,14 +350,10 @@ DCMI_IRQHandler
 HASH_RNG_IRQHandler
 FPU_IRQHandler
 
->>>>>>> e4158175f9ab30d24f7d567946e59df59350963a
                 B       .
                 ENDP
 
                 ALIGN
-<<<<<<< HEAD
-                END
-=======
 
 ;*******************************************************************************
 ; User Stack and Heap initialization (MicroLib)
@@ -388,4 +382,4 @@ __user_initial_stackheap
                  ENDIF
 
                  END
->>>>>>> e4158175f9ab30d24f7d567946e59df59350963a
+

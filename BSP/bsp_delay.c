@@ -1,7 +1,7 @@
 /******************************************************************************
  * @file    bsp_delay.c
  * @brief   延时实现
- *          bsp_delay_ms: SysTick 1ms 滴查差值，无累积漂移
+ *          bsp_delay_ms: SysTick 1ms 滴答差值，无累积漂移
  *          bsp_delay_us: DWT CYCCNT 周期计数
  *
  *  DWT 启用三步（Cortex-M4，168MHz 下每周期约 5.95ns）：

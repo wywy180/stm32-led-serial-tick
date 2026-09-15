@@ -67,9 +67,6 @@ int main(void)
 #else
     #error "RUN_MODE 必须为 0/1/2"
 #endif
-
-    /* 不会到达 */
-    while (1) { }
 }
 
 #ifdef  USE_FULL_ASSERT            /* 本工程未启用断言，保留占位 */
