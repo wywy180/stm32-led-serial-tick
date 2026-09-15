@@ -5,6 +5,7 @@
  *          本工程用 AHB/8(21MHz) 源：CLKSOURCE=0，故 1ms 需计 21000 个周期
  ******************************************************************************/
 #include "bsp_tick.h"
+#include "stm32f4xx.h"              // SysTick 寄存器定义
 
 /* 全局毫秒计数，中断里自增；声明为 volatile 防止编译器优化掉循环读 */
 volatile uint32_t g_tick = 0;
