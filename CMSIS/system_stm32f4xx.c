@@ -25,6 +25,11 @@ void SystemInit(void)
     /* 更新主频变量（裸机工程无 CMSIS SystemCoreClockUpdate，直接赋值） */
     SystemCoreClock = 168000000UL;
 
-    /* 注意：FPU 未启用（本工程不使用浮点）；如需用浮点，在此处加
-       SCB->CPACR |= (0xFUL << 20); __DSB(); __ISB(); */
+    /* 启用 FPU（CP10/CP11 全访问）。
+       F407 带 FPU 但复位后默认关闭；ARMCC C 库启动时会执行 _fp_init
+       （VMSR FPSCR 指令），若 FPU 未开启会触发 NOCP UsageFault -> HardFault，
+       导致 main 永远执行不到。必须在 __main(C 运行时) 之前使能，故放这里。 */
+    SCB->CPACR |= ((3UL << (10U * 2U)) | (3UL << (11U * 2U))); /* CP10+CP11 全权访问 */
+    __DSB();
+    __ISB();
 }

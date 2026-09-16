@@ -1,171 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_projx.xsd">
+
   <SchemaVersion>2.1</SchemaVersion>
+
   <Header>### uVision Project, (C) Keil Software</Header>
+
   <Targets>
     <Target>
       <TargetName>led_serial_tick</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pTargetType>1</pTargetType>
-      <pQfp>0</pQfp>
-      <pDevName></pDevName>
-      <pTarg>0</pTarg>
-      <OutputDirectory>.\Objects\</OutputDirectory>
-      <OutputName>led_serial_tick</OutputName>
-      <pAFat>0</pAFat>
-      <pAAdr>0</pAAdr>
-      <pARef>0</pARef>
-      <pLECtrl>1</pLECtrl>
-      <pLEOper>0</pLEOper>
-      <pStrtSel>1</pStrtSel>
-      <pTmOpt>1</pTmOpt>
-      <pUseSgl>0</pUseSgl>
-      <pRvctr>0</pRvctr>
-      <pRvctrMsk>0</pRvctrMsk>
-      <pRam>0</pRam>
-      <pMain>0</pMain>
-      <pSet>0</pSet>
-      <pDontSet>0</pDontSet>
-      <pSkip>0</pSkip>
-      <pLst>0</pLst>
-      <pBout>1</pBout>
-      <pBoutFst>0</pBoutFst>
-      <uC99>1</uC99>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
       <uAC6>0</uAC6>
-      <uAC6IMPL>0</uAC6IMPL>
-      <uAC6SRC>0</uAC6SRC>
-      <uAC6LIB>0</uAC6LIB>
-      <uSntEnv>0</uSntEnv>
-      <uUseClms>0</uUseClms>
-      <uCmsi>0</uCmsi>
-      <uClmsR>0</uClmsR>
-      <uIncludePath2></uIncludePath2>
-      <uDefCmsi>0</uDefCmsi>
-      <uUvsnCore>1</uUvsnCore>
       <TargetOption>
         <TargetCommonOption>
           <Device>STM32F407ZGTx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.17.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.STM32F4xx_DFP.3.1.1</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00020000) IRAM2(0x10000000,0x00010000) IROM(0x08000000,0x00100000) CPUTYPE("Cortex-M4") FPU2 CLOCK(168000000) ELITTLE</Cpu>
-          <Flash>1</Flash>
-          <FlashOverride>0</FlashOverride>
-          <RvctClst>0</RvctClst>
-          <RvctSName>..\CMSIS\startup_stm32f407xx.s</RvctSName>
-          <RvctPName></RvctPName>
-          <RvctCName></RvctCName>
-          <RvctStat>0</RvctStat>
-          <WpInfoRtcmem>0</WpInfoRtcmem>
-          <DocCommit>0</DocCommit>
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile></StartupFile>
+          <FlashDriverDll></FlashDriverDll>
+          <DeviceId></DeviceId>
+          <RegisterFile></RegisterFile>
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
+          <SFDFile>$$Device:STM32F407ZGTx$CMSIS\SVD\STM32F407.svd</SFDFile>
+          <bCustSvd>0</bCustSvd>
+          <UseEnv>0</UseEnv>
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath></RegisterFilePath>
+          <DBRegisterFilePath></DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
           <OutputName>led_serial_tick</OutputName>
           <CreateExecutable>1</CreateExecutable>
+          <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
-          <CreateDebug>0</CreateDebug>
-          <CreateFlash>0</CreateFlash>
-          <CfgPb>0</CfgPb>
-          <Pb BootPath=""/><PbRom></PbRom><PbRam></PbRam>
-          <UseMdf>0</UseMdf>
-          <MdfName></MdfName>
-          <Flash1>1</Flash1>
-          <Flash2></Flash2>
-          <Flash3></Flash3>
-          <Flash4></Flash4>
-          <pFlashBroker></pFlashBroker>
-          <pFlashBrokerProg>1</pFlashBrokerProg>
-          <pFlashBrokerArgs></pFlashBrokerArgs>
-          <pFlashBrokerClass></pFlashBrokerClass>
-          <uC99>1</uC99>
-          <uAC6>0</uAC6>
-          <uMicroLib>1</uMicroLib>
-          <uTC>0</uTC>
-          <uSntnv>0</uSntnv>
-          <uTSrc>0</uTSrc>
-          <uTDf>0</uTDf>
-          <uRA>0</uRA>
-          <uAcmAd>0</uAcmAd>
-          <uCp>0</uCp>
-          <uLe>0</uLe>
-          <uAt>0</uAt>
-          <uRt>0</uRt>
-          <uWb>0</uWb>
-          <uSt>0</uSt>
-          <uStF>0</uStF>
-          <uStM>0</uStM>
-          <uAccUp>0</uAccUp>
-          <uCondSel>0</uCondSel>
-          <uCondA>0</uCondA>
-          <uCondB>0</uCondB>
-          <uCondC>0</uCondC>
-          <uCondD>0</uCondD>
-          <uCondE>0</uCondE>
-          <uCondF>0</uCondF>
-          <uCondG>0</uCondG>
-          <uCondH>0</uCondH>
-          <uCondI>0</uCondI>
-          <uCondJ>0</uCondJ>
-          <uCondK>0</uCondK>
-          <uCondL>0</uCondL>
-          <uCondM>0</uCondM>
-          <uCondN>0</uCondN>
-          <uCondO>0</uCondO>
-          <uCondP>0</uCondP>
-          <uCondQ>0</uCondQ>
-          <uCondR>0</uCondR>
-          <uCondS>0</uCondS>
-          <uCondT>0</uCondT>
-          <uCondU>0</uCondU>
-          <uCondV>0</uCondV>
-          <uCondW>0</uCondW>
-          <uCondX>0</uCondX>
-          <uCondY>0</uCondY>
-          <uCondZ>0</uCondZ>
-          <uSlrsp>0</uSlrsp>
-          <uCSnp>0</uCSnp>
-          <uCSnpCnfg>0</uCSnpCnfg>
-          <uCSnpRt>0</uCSnpRt>
-          <uNSt>0</uNSt>
-          <EnableFlash1>0</EnableFlash1>
-          <EnableFlash2>0</EnableFlash2>
-          <EnableFlash3>0</EnableFlash3>
-          <EnableFlash4>0</EnableFlash4>
-          <pDrvr>0</pDrvr>
-          <pDrvrCnfg>0</pDrvrCnfg>
-          <pSpec>0</pSpec>
-          <pSpecSel>0</pSpecSel>
-          <pSpecFile></pSpecFile>
-          <pSpecOth></pSpecOth>
-          <pSpecLog>0</pSpecLog>
-          <pSpecAuto>0</pSpecAuto>
-          <pSpecSiz>0</pSpecSiz>
-          <pSpecRtcm>0</pSpecRtcm>
-          <UseEnv></UseEnv>
-          <BinPath></BinPath>
-          <IncPath></IncPath>
-          <LibPath></LibPath>
-          <SfPath></SfPath>
-          <RvctSpath>..\CMSIS\startup_stm32f407xx.s</RvctSpath>
-          <RvctCpath></RvctCpath>
-          <RvctPpath></RvctPpath>
-          <CpuSpec></CpuSpec>
-          <uCpuSpec>0</uCpuSpec>
-          <OutputDirectory2></OutputDirectory2>
-          <ListingDirectory>.\Listings\</ListingDirectory>
-          <ListingDirectory2></ListingDirectory2>
-          <uOpt>0</uOpt>
-          <uOptX>0</uOptX>
-          <uOvrf>0</uOvrf>
-          <uThrd>0</uThrd>
-          <uUseHost>0</uUseHost>
-          <uParse>0</uParse>
-          <uCpyFl>0</uCpyFl>
-          <uCpyFlD>0</uCpyFlD>
-          <uCpyFlP></uCpyFlP>
-          <uCpyFl2>0</uCpyFl2>
-          <uCpyFlD2>0</uCpyFlD2>
-          <uCpyFlP2></uCpyFlP2>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>0</BrowseInformation>
+          <ListingPath>.\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopU1X>0</nStopU1X>
+            <nStopU2X>0</nStopU2X>
+          </BeforeCompile>
           <BeforeMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
@@ -176,16 +79,6 @@
             <nStopB1X>0</nStopB1X>
             <nStopB2X>0</nStopB2X>
           </BeforeMake>
-          <BeforeCompile>
-            <RunUserProg1>0</RunUserProg1>
-            <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
-            <UserProg2Name></UserProg2Name>
-            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
-            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
-            <nStopA1X>0</nStopA1X>
-            <nStopA2X>0</nStopA2X>
-          </BeforeCompile>
           <AfterMake>
             <RunUserProg1>0</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
@@ -196,49 +89,25 @@
             <nStopA1X>0</nStopA1X>
             <nStopA2X>0</nStopA2X>
           </AfterMake>
-          <AfterBld>
-            <RunUserProg1>0</RunUserProg1>
-            <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name></UserProg1Name>
-            <UserProg2Name></UserProg2Name>
-          </AfterBld>
-          <TargetStatus>
-            <Error>0</Error>
-            <ExitCodeStop>0</ExitCodeStop>
-            <ButtonStop>0</ButtonStop>
-            <NotGenerated>0</NotGenerated>
-            <InvalidFlash>1</InvalidFlash>
-            <TargetFinished>0</TargetFinished>
-          </TargetStatus>
+          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SVCSIdString></SVCSIdString>
         </TargetCommonOption>
-        <CommonOption>
+        <CommonProperty>
           <UseCPPCompiler>0</UseCPPCompiler>
-          <GenerateCrossRef>1</GenerateCrossRef>
-          <AsmXRef>1</AsmXRef>
-          <CXRef>1</CXRef>
-          <LXRef>0</LXRef>
-          <CrossRefPerFile>1</CrossRefPerFile>
-          <CommonSelBrowse>1</CommonSelBrowse>
-          <CParser>0</CParser>
-          <ArmClang>0</ArmClang>
-          <uThumb>0</uThumb>
-          <uSurpInc>0</uSurpInc>
-          <uC99>1</uC99>
-          <uAC6>0</uAC6>
-          <uAC6IMPL>0</uAC6IMPL>
-          <uAC6SRC>0</uAC6SRC>
-          <uAC6LIB>0</uAC6LIB>
-          <uC99_C11>1</uC99_C11>
-          <uGFX>0</uGFX>
-          <UseGgd>0</UseGgd>
-          <NonBlocking>0</NonBlocking>
-          <VariousControls>
-            <MiscControls></MiscControls>
-            <Define></Define>
-            <Undefine></Undefine>
-            <IncludePath></IncludePath>
-          </VariousControls>
-        </CommonOption>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
+          <ComprImg>1</ComprImg>
+        </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
           <SimDllArguments></SimDllArguments>
@@ -249,23 +118,226 @@
           <TargetDlgDll>PARM.DLL</TargetDlgDll>
           <TargetDlgDllArguments></TargetDlgDllArguments>
         </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
+          </Flash1>
+          <bUseTDR>1</bUseTDR>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
+          <Flash3>"" ()</Flash3>
+          <Flash4></Flash4>
+          <pFcarmOut></pFcarmOut>
+          <pFcarmGrp></pFcarmGrp>
+          <pFcArmRoot></pFcArmRoot>
+          <FcArmLst>0</FcArmLst>
+        </Utilities>
         <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M4"</AdsCpuType>
+            <RvctDeviceName></RvctDeviceName>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>2</RvdsVP>
+            <RvdsMve>0</RvdsMve>
+            <RvdsCdeCp>0</RvdsCdeCp>
+            <nBranchProt>0</nBranchProt>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>0</hadIROM2>
+            <StupSel>0</StupSel>
+            <useUlib>1</useUlib>
+            <EndSel>0</EndSel>
+            <uLtcg>0</uLtcg>
+            <nSecure>0</nSecure>
+            <RoSelD>0</RoSelD>
+            <RwSelD>5</RwSelD>
+            <CodeSel>0</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>0</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>0</Im1Chk>
+            <Im2Chk>0</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x20000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x8000000</StartAddress>
+                <Size>0x100000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x8000000</StartAddress>
+                <Size>0x100000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x20000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x10000000</StartAddress>
+                <Size>0x10000</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector></RvctStartVector>
+          </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
             <Optim>1</Optim>
             <oTime>0</oTime>
-            <TargetLM3S>0</TargetLM3S>
-            <Time0>0</Time0>
+            <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
             <Strict>0</Strict>
-            <NoWarn>0</NoWarn>
-            <noWarnSame>0</noWarnSame>
-            <noWarnAll>0</noWarnAll>
-            <OptimB>1</OptimB>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>2</wLevel>
+            <uThumb>0</uThumb>
+            <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
-            <uAC6>0</uAC6>
+            <uGnu>0</uGnu>
+            <useXO>0</useXO>
+            <v6Lang>3</v6Lang>
+            <v6LangP>3</v6LangP>
+            <vShortEn>1</vShortEn>
+            <vShortWch>1</vShortWch>
+            <v6Lto>0</v6Lto>
+            <v6WtE>0</v6WtE>
+            <v6Rtti>0</v6Rtti>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>--library_type=microlib</MiscControls>
               <Define>STM32F407xx,HSE_VALUE=8000000</Define>
               <Undefine></Undefine>
               <IncludePath>..\User;..\BSP;..\CMSIS;..\CMSIS\CMSIS_Core;C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include</IncludePath>
@@ -280,27 +352,29 @@
             <SwStkChk>0</SwStkChk>
             <NoWarn>0</NoWarn>
             <uSurpInc>0</uSurpInc>
+            <useXO>0</useXO>
+            <ClangAsOpt>1</ClangAsOpt>
             <VariousControls>
-              <MiscControls></MiscControls>
+              <MiscControls>--pd "__MICROLIB SETA 1"</MiscControls>
               <Define></Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
-            <umfTarg>0</umfTarg>
+            <umfTarg>1</umfTarg>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <noStLib>0</noStLib>
             <RepFail>1</RepFail>
-            <useFile>0</useFile>
+            <useFile>1</useFile>
             <TextAddressRange>0x08000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
             <ScatterFile>.\stm32f407zg.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc></Misc>
+            <Misc>--library_type=microlib</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings></DisabledWarnings>
           </LDads>
@@ -311,10 +385,12 @@
           <GroupName>USER</GroupName>
           <Files>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\User\main.c</FilePath>
             </File>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\User\stm32f4xx_it.c</FilePath>
             </File>
@@ -324,26 +400,32 @@
           <GroupName>BSP</GroupName>
           <Files>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_clk.c</FilePath>
             </File>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_led.c</FilePath>
             </File>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_uart.c</FilePath>
             </File>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_tick.c</FilePath>
             </File>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_delay.c</FilePath>
             </File>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_version.c</FilePath>
             </File>
@@ -353,10 +435,12 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
+              <FileName></FileName>
               <FileType>2</FileType>
               <FilePath>..\CMSIS\startup_stm32f407xx.s</FilePath>
             </File>
             <File>
+              <FileName></FileName>
               <FileType>1</FileType>
               <FilePath>..\CMSIS\system_stm32f4xx.c</FilePath>
             </File>
@@ -365,4 +449,20 @@
       </Groups>
     </Target>
   </Targets>
+
+  <RTE>
+    <apis/>
+    <components/>
+    <files/>
+  </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>led_serial_tick</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
+
 </Project>
