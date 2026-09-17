@@ -321,6 +321,8 @@
             <Strict>0</Strict>
             <EnumInt>0</EnumInt>
             <PlainCh>0</PlainCh>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
             <wLevel>2</wLevel>
@@ -385,12 +387,12 @@
           <GroupName>USER</GroupName>
           <Files>
             <File>
-              <FileName></FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\main.c</FilePath>
             </File>
             <File>
-              <FileName></FileName>
+              <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\stm32f4xx_it.c</FilePath>
             </File>
@@ -400,32 +402,32 @@
           <GroupName>BSP</GroupName>
           <Files>
             <File>
-              <FileName></FileName>
+              <FileName>bsp_clk.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_clk.c</FilePath>
             </File>
             <File>
-              <FileName></FileName>
+              <FileName>bsp_led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_led.c</FilePath>
             </File>
             <File>
-              <FileName></FileName>
+              <FileName>bsp_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_uart.c</FilePath>
             </File>
             <File>
-              <FileName></FileName>
+              <FileName>bsp_tick.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_tick.c</FilePath>
             </File>
             <File>
-              <FileName></FileName>
+              <FileName>bsp_delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_delay.c</FilePath>
             </File>
             <File>
-              <FileName></FileName>
+              <FileName>bsp_version.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\bsp_version.c</FilePath>
             </File>
@@ -435,12 +437,12 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
-              <FileName></FileName>
+              <FileName>startup_stm32f407xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\CMSIS\startup_stm32f407xx.s</FilePath>
             </File>
             <File>
-              <FileName></FileName>
+              <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\CMSIS\system_stm32f4xx.c</FilePath>
             </File>
